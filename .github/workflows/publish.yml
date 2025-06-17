@@ -16,6 +16,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Saludar
+        uses: actions/hello-world-action-by-hitomiblood@v1.0
+        with:
+          who-to-greet: 'Miguel'
+
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
